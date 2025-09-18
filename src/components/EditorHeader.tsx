@@ -1,8 +1,13 @@
 import { PenTool, Sparkles } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export const EditorHeader = () => {
   return (
-    <header className="text-center py-12 bg-gradient-to-b from-background to-muted/20">
+    <header className="text-center py-12 bg-gradient-to-b from-background to-muted/20 relative">
+      <div className="absolute top-4 right-4">
+        <ThemeToggle />
+      </div>
+      
       <div className="flex items-center justify-center gap-3 mb-4">
         <div className="p-3 bg-primary/10 rounded-xl">
           <PenTool className="h-8 w-8 text-primary" />
